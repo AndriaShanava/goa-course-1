@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* ფონის ფერი */
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid cyan; /* ჩარჩოს ფერი */
+    border-radius: 5px;
+    box-shadow: 0 0 20px cyan; /* გარე განათება */
+    margin: 20px auto;
+    animation: glow 2s infinite; /* ანიმაცია */
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px cyan;
+    }
+    50% {
+      box-shadow: 0 0 40px cyan;
+    }
+  }
+  
+  .progress-bar {
+    width: 300px;
+    height: 10px;
+    background-color: white; /* ხაზის ფონი */
+    border-radius: 5px;
+    overflow: hidden; /* შიდა ელემენტების გამოსვლის თავიდან ასაცილებლად */
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .progress {
+    width: 0;
+    height: 100%;
+    background-color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 10px cyan;
+    animation: progress 3s linear infinite; /* ხაზის პროგრესი */
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0;
+
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .start-text {
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    animation: text-glow 2s infinite;
+  }
+  
+  @keyframes text-glow {
+    0%, 100% {
+      text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    }
+    50% {
+      text-shadow: 0 0 20px cyan, 0 0 40px cyan;
+    }
+  }
+  

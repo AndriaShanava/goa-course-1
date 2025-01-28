@@ -1,0 +1,16 @@
+.heartbeat {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: heartbeat 1s infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }

@@ -1,0 +1,10 @@
+.animated-div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s, background-color 2s;
+  }
+  .animated-div:hover {
+    width: 200px;
+    background-color: green;
+  }
