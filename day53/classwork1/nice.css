@@ -1,0 +1,24 @@
+/* კონტეინერის სტილი */
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 სვეტი */
+    grid-template-rows: repeat(5, 1fr); /* 5 რიგი */
+    gap: 10px; /* უჯრებს შორის მანძილი */
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+
+/* დივის სტილი */
+.centered-div {
+    grid-column: 3 / 4; /* მესამე სვეტი */
+    grid-row: 3 / 4; /* მესამე რიგი */
+    background-color: #4CAF50; /* მწვანე ფერი */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border: 2px solid #333;
+}

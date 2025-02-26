@@ -1,0 +1,24 @@
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            width: 500px;
+            height: 500px;
+            gap: 5px; 
+            background-color: #ed0d0d;
+            padding: 5px;
+        }
+
+        .grid-item {
+            background-color: #4CAF50; 
+            grid-area: 5 / 3 / 9 / 7;
+        }
+
+
+        .grid-container > div {
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }

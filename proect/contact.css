@@ -1,0 +1,208 @@
+body.contact-page {
+    background: linear-gradient(135deg, #111, #440000, #e60000);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #fff;
+}
+
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+body.contact-page main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+body.contact-page h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(230, 0, 0, 0.7);
+}
+
+
+body.contact-page .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 20px;
+}
+
+
+body.contact-page .contact-info,
+body.contact-page .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+body.contact-page .contact-info:hover,
+body.contact-page .contact-form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+body.contact-page .contact-info h3,
+body.contact-page .contact-form h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e60000;
+}
+
+
+body.contact-page .contact-info p,
+body.contact-page .contact-info ul li {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+body.contact-page .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+body.contact-page .social-link {
+    color: #e60000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+body.contact-page .social-link:hover {
+    color: #ff1a1a;
+    transform: scale(1.1);
+}
+
+body.contact-page .contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+body.contact-page .contact-form label {
+    display: block;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+body.contact-page .contact-form input,
+body.contact-page .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: 0.4s;
+}
+
+body.contact-page .contact-form input:focus,
+body.contact-page .contact-form textarea:focus {
+    border-color: #e60000;
+    box-shadow: 0 0 8px rgba(230, 0, 0, 0.5);
+    outline: none;
+}
+
+
+body.contact-page .contact-form .button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background: #e60000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+body.contact-page .contact-form .button:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(230, 0, 0, 0.6);
+}
+
+
+body.contact-page .map-container {
+    margin-top: 40px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #e60000;
+    text-shadow: 0 4px 8px rgba(230, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #e60000;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #e60000;
+    color: #fff;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 40px;
+}
+

@@ -1,0 +1,180 @@
+/* Уникальные стили для страницы моделей */
+
+/* Стили для навигации */
+body.models-page header {
+    background: #111;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.models-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+body.models-page nav ul li {
+    display: inline;
+}
+
+body.models-page nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #e60000, #ff1a1a);
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(230, 0, 0, 0.4);
+    display: inline-block;
+}
+
+body.models-page nav ul li a:hover {
+    background: linear-gradient(90deg, #ff1a1a, #e60000);
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(230, 0, 0, 0.6);
+}
+
+
+body.models-page {
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    color: #e0e0e0;
+}
+
+body.models-page main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+body.models-page h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(230, 0, 0, 0.5);
+}
+
+/* Параллакс-эффект */
+body.models-page .parallax {
+    position: relative;
+    height: 400px;
+    background-image: url('mercedes-bg.jpg'); /* Фоновое изображение */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+body.models-page .parallax-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+body.models-page .parallax-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+body.models-page .parallax-content p {
+    font-size: 24px;
+    color: #ccc;
+}
+
+/* Сетка карточек моделей */
+body.models-page .model-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для карточек моделей */
+body.models-page .model-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+body.models-page .model-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+body.models-page .model-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+body.models-page .model-card:hover img {
+    transform: scale(1.1);
+}
+
+body.models-page .model-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #e60000;
+}
+
+body.models-page .model-card p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Кнопка "Learn More" */
+body.models-page .model-card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #e60000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body.models-page .model-card .button:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(230, 0, 0, 0.6);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body.models-page .parallax-content h2 {
+        font-size: 36px;
+    }
+
+    body.models-page .parallax-content p {
+        font-size: 18px;
+    }
+
+    body.models-page .model-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

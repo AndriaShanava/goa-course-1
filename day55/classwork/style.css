@@ -1,0 +1,15 @@
+*{
+    width: 200px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 430px){
+    .container{
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px;
+}
+.left-card {
+    background: linear-gradient(180deg, #7755FF, #2E2BE9);
+    color: #fff;
+    padding: 40px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+}
+.score-circle {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.score {
+    font-size: 48px;
+    font-weight: bold;
+}
+.total-score {
+    font-size: 14px;
+    opacity: 0.8;
+}
+.great-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.right-card {
+    padding: 40px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+}
+.summary-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.categories {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.categories li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.reaction { background-color: #FFE5E5; color: #D32F2F; }
+.memory { background-color: #FFF4C2; color: #FFA000; }
+.verbal { background-color: #E5F4E3; color: #388E3C; }
+.visual { background-color: #E5E7FA; color: #303F9F; }
+.continue-btn {
+    background-color: #303F9F;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.continue-btn:hover {
+    background-color: #1A237E;
+}
